@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('imagem5.jpg'); /* Altere para o nome da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    position: relative; /* Necessário para o pseudo-elemento */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Branco com 50% de opacidade, se desejar */
+    z-index: 1; /* Coloca a camada acima da imagem, mas abaixo do conteúdo */
+}
+
+.content h1 {
+    font-size: 2em; /* Aumente o tamanho conforme desejado */
+    color: black; /* Altere a cor se necessário */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.content {
+    position: relative; /* Necessário para o conteúdo aparecer acima da camada */
+    z-index: 2; /* Garante que o conteúdo fique acima da camada */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Espaço para a navbar */
+    margin-bottom: 50px; /* Espaço para o footer */
+}
+
+
+
+
+
+.navbar, .footer {
+    background-color: #800080; /* Roxo sólido */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 3; /* Garante que a navbar e o footer estejam acima de tudo */
+}
+
+.navbar {
+    top: 0;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.images img {
+    margin: 0 10px;
+    width: 250px; /* Aumente o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#countdown {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+}
