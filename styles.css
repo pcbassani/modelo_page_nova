@@ -45,7 +45,7 @@ body::before {
 
 
 .navbar, .footer {
-    background-color: #004D34; /* Roxo sólido */
+    background-color: #004D34;
     color: white;
     text-align: center;
     padding: 10px 0;
