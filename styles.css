@@ -23,7 +23,7 @@ body::before {
 }
 
 .content h1 {
-    font-size: 2em; /* Aumente o tamanho conforme desejado */
+    font-size: 1,5em; /* Aumente o tamanho conforme desejado */
     color: black; /* Altere a cor se necessário */
     text-align: center; /* Centraliza o texto horizontalmente */
 }
@@ -45,7 +45,7 @@ body::before {
 
 
 .navbar, .footer {
-    background-color: #800080; /* Roxo sólido */
+    background-color: #004D34; /* Roxo sólido */
     color: white;
     text-align: center;
     padding: 10px 0;
